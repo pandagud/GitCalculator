@@ -66,10 +66,21 @@ namespace Calculator.Test.Unit
         [TestCase(10, 2, 5)]
         [TestCase(10, 5, 2)]
         [TestCase(20, 2, 10)]
-        [TestCase(-10, 5, -2)]
         public void Divid_Dividsomething(double x, double y, double result)
         {
-            Assert.That(_uut.Divide(x,y),Is.EqualTo(result));
+            
+                Assert.That(_uut.Divide(x, y), Is.EqualTo(result));
+            
+           
+            
+        }
+
+        [TestCase(10, 0)]
+        public void Divid_with_Zero(double x, double y)
+        {
+            
+            Assert.IsTrue(double.IsInfinity(x/y));
+            
         }
     }
 }
