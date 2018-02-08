@@ -74,8 +74,8 @@ namespace Calculator.Test.Unit
            
             
         }
-
-        [TestCase(10, 0)]
+        
+        [TestCase(12, 0)]
         public void Divid_with_Zero(double x, double y)
         {
             
