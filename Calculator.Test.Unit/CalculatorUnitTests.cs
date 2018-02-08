@@ -79,7 +79,7 @@ namespace Calculator.Test.Unit
         public void Divid_with_Zero(double x, double y)
         {
             
-            Assert.IsTrue(double.IsInfinity(y/x));
+            Assert.IsTrue(double.IsInfinity(x/y));
             
         }
     }
